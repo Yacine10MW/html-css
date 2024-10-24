@@ -1,0 +1,94 @@
+/*  Feuille de style pour la page de flexbox */
+
+/* 
+principe du flexbox : permet de passer d'un contexte bloc à un contexte flex, pour le faire il faut appliquer un modèle de boite flexible sur le conteneur de mes éléments, : le conteneur = l'élément parent.
+Dans le contexte flex on va avoir un axe principale, il est par défaut horizontal et il commence à gauche. Les éléments qui sont à l'intérieur du parent (avec un contexte flex) vont être distribués en fonction de cet axe principal.
+La terminologie :
+    - le parent avec du flex => conteneur
+    - les éléments à l'intérieur du conteneur => (item au singulier)
+*/
+p {
+    font-size: 20px;
+}
+
+div {
+    /* text-align: center; */
+    color: #fff;
+    font-weight: bold;
+}
+
+span {
+    font-weight: bold;
+    background-color: darkmagenta;
+    color: white;
+}
+
+.style {
+    border: 1px solid #333;
+    width: 60%;
+    min-height: 300px;
+}
+
+.style div {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.style :nth-child(1) {
+    background-color: orange;
+}
+.style :nth-child(2) {
+    background-color: blue;
+}
+.style :nth-child(3) {
+    background-color: green;
+}
+.style :nth-child(4) {
+    background-color: red;
+}
+.style :nth-child(5) {
+    background-color: pink;
+}
+.style :nth-child(6) {
+    background-color: yellow;
+}
+.style :nth-child(7) {
+    background-color: purple;
+}
+/* **********  A - Comportement normal ********* */
+/* Comportement par défaut des div */
+
+/* B - Ajout de flex au conteneur */
+
+#conteneurB {
+    display: flex;
+    /* Instruction à donner au parent, suite à cette application, le comportrement des éléments dans le conteneurB ont totalement changé : Les div s'affichent côte à côte */
+}
+
+/* column */
+#conteneurColumn {
+    display: flex;
+    flex-direction: column;
+}
+/* row-reverse */
+
+#conteneurRowReverse {
+    display: flex;
+    flex-direction: row-reverse;
+    /* justify-content: flex-end; */
+}
+
+/* column-reverse */
+#conteneurColumnReverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/* wrap */
+#conteneurC {
+    display: flex;
+    flex-wrap: wrap;
+}

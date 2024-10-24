@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<!-- Ceci est un commentaire -->
+<!--
+    Doctype est la premiére balise obligatoire dans une page HTML : c'est une instruction au navigateur web sur la version du langage de balisage dont la page est écrite  et elle désigne  le type de document pour le navigateur ici : .html
+-->
+
+<html lang="fr">
+<!--
+    La balise html désigne le début de la page  -> balise obligatoire : c'est elle qui va recueillir les deux principaux éléments de la hérarchie : <head> et <body>  et englobe tous les élément d'une page web.
+    L'attribut "lang" dont la valeutr est "fr" désigne la langue utilisé pour le contenu de la page: le français utilisé côté utilisateur -> important pour l'accessibilité.
+    Lorsque l'on donne une valeur "zxx" : on utilise cette abréviation lorsque l'on est essentiellement en lorem ipsum
+-->
+
+<head>
+    <!--
+        Élément d'en-tête, la balise head elle regroupe toutes les méta-informations et contient les paramètres d'en-tête de la page html qui sont, pour la plupart invisible pour l'internaute
+    -->
+    <meta charset="UTF-8" />
+    <!-- 
+        L'encodage des caractéres pour afficher les caractéres spéciaux tels que les accents
+    -->
+    <!-- 
+        les meta sont les balises qui fournissenent des méta-données au navigateur et moteur de recherche c-à-d  des informations au sujet de la page en question
+        Il existe de très nombreuses balises méta, les plus utilisés :
+        - La balise meta  + l'attribut charset : permet l'encodage des caractéres => il est recommandé de la placer au tout début de la balise head, surtout avant la balise title, car cette derniére peut déjà être concerné par l'encodage des carctéres. 
+        une seule valeur cependant devrait être utilisée aujord'hui autant que possible : utf-8. cette méthode d'encodage permet d'afficher sans aucun problème pratiquement tout les symboles de toutes les langues de notre planètes ! c'est pour cela que j'ai indiqué utf-8 dans cette balise
+
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Contrôler la mise en page et l'apparence initiale de la page sur les navigation mobile icçi le 1.0 signifie qu'il ny'a pas de zoom -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- compatibilité avec le navigateur Edge -->
+    <meta name="description" content="Yacine Djediden : ma première page HTML">
+    <!-- La description est ce qui sert au moteur de recherche pour avoir une description succinte de votre page, elle fourni à Google le texte de résumé qu'il affichera dans ses SERP ( Search Engine Result Page)  -->
+
+    <meta name="author" content="Yacine Djediden">
+    <!-- Désigne l'auteur de la page  -->
+
+    <title>Les balises de mise en page</title>
+    <!-- 
+        le titre de la page, cette balise est obligatoire, le contenu de cet élément n'apparait pas directement dans la page mais sur l'onglet, il est utilisé : 
+        - par le navigateur web , dans le titre de la fenêtre, les onglets, comme titres de marque-pages (favoris)
+        - par les moteurs de recherche et divers outils, comme titre de résultat de recherche
+    -->
+
+    <!-- Icone de l'onglet -->
+    <link rel="shortcut icon" href="./img/logo-head.png" />
+</head>
+
+<body>
+    <!-- Le début de la partie visible dans le navigateur, tout ce qui sera affiché sur la page s'écrit à l'intérieur de la balise BODY, le corps du document -->
+
+    <!-- Les éléments (balises) de type bloc : sont des balises qui prennent toute la largeur de la page et créees automatiquement un retour à ligne -->
+    <nav>
+        <!-- UL = Unordered List -->
+        <ul>
+            <li>Accueil</li>
+            <li>Boutique
+                
+            </li>
+            <li>
+                <a href="#form">Formulaire</a>
+            </li>
+        </ul>
+    </nav>
+
+
+
+    <header>
+        <!-- Un seul H1 par page -->
+        <h1>Ceci est le titre principal</h1>
+        <p>
+            Texte classique <em>Texte en italique</em>.
+            <strong>Texte en gras</strong> <mark>mark</mark> <del>del</del> <small>tout petit</small>
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sunt
+            accusantium molestias officiis nulla est tempora officia, sequi et
+            pariatur? Consequuntur corrupti molestiae aliquam eum sint nemo iure
+            voluptate ea?
+        </p>
+    </header>
+
+    <hr><!-- hr = horizontal ruler (régle horizontale = ligne horizontale), élément de type bloc -->
+
+
+    <pre>
+
+            Je
+                    suis
+            un
+                    paragraphe
+                        préformaté
+    </pre>
+    <!-- Le texte est préformaté avec une typographie à chasse fixe (toutes les lettres occupent la m^me largeur) -->
+
+
+    <main>
+        <section>
+            <h2>Ordered List</h2>
+            <ol>
+                <li>Ceci est une</li>
+                <li>liste dans</li>
+                <li>l'ordre</li>
+            </ol>
+        </section>
+        <hr>
+        <p> La molécule d'eau : H <sub>2</sub> O</p>
+        <p>Je suis M <sup>r</sup> Delma</p>
+        <p>X<sup>2</sup> = ?</p>
+        <!-- 
+            sup -> permet d'afficher un texte en exposant
+            sub -> permet d'afficher un texte en indice
+        
+        -->
+
+        <hr>
+
+        <h2>La balise code</h2>
+        <code>
+            <!--  La balise qui montre le code, sert à présenter du code. Elle sera utilisé lorsque
+            l'on veut faire comprendre au navigateur que le contenu est du code -->
+            <pre>
+            &lt;!DOCTYPE html> 
+            &lt;html lang="fr>
+                &lt;head>
+                    &lt;meta charset="UTF-8">
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    &lt;meta http-equiv="X-UA-Compatible" content="ie=edge">
+                    &lt;title>les balises pour une page web&lt;/title>
+                &lt;/head>
+                &lt;body>
+                &lt;/body>
+            &lt;/html>
+            </pre>
+            <!--  Une entité HTML, est une suite de caractères débutent par une esperluette (&) et se terminent par un point-virgule (;) utilisé pour affiché un caractère spécial  -->
+        </code>
+        <hr>
+        <p>Hello WORLD&nbsp;!</p>
+        <!-- &nbsp; espace fine insécable, si 2 mots sont séparé par &nbsp; lorsqu'ils sont au bout d'une ligne et qu'il ne reste plus assez de place pour qu'un seule reste sur cette ligne, alors les 2 mots passe à la ligne suivante -->
+        <p>&gt;</p>
+        <p>&amp;</p>
+        <p>&copy;</p>
+        <p>&reg;</p>
+        <hr>
+        <!-- La balise kbd est une abbréviation de keyboard. Cette balise permettra donc de faire comprendre que l'on parle d'une manipulation du clavier -->
+        <p>Pour sauvegarder un document j'utilise le racourci <kbd>ctrl + s</kbd></p>
+
+        <hr>
+        <ol>
+            <li>Fruits</li>
+            <ul>
+                <li>banane</li>
+                <li>pomme</li>
+                <li>orange</li>
+            </ul>
+            <li>Animaux</li>
+            <ul>
+                <li>Chat</li>
+                <li>Chien</li>
+            </ul>
+            <li>Plantes</li>
+
+        </ol>
+        <hr>
+
+        <section>
+            <h3>Image en HTML</h3>
+            <img src="./img/bg.webp" height="200" alt="image-section" />
+            <!-- L'ALT de l'image est pour l'accessibilité -->
+
+            <div>
+                <h4>Tableaux</h4>
+                <table border="4" cellpadding="10" cellspacing="4" style="text-align: center">
+                    <!-- thead est pour l'entete du tableau -->
+                    <thead>
+                        <tr>
+                            <th>Col 1</th>
+                            <th>Col 2</th>
+                            <th>Col 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">Cell 1</td>
+                            <td>Cell 2</td>
+                            <td>Cell 3</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Cell 4</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+
+                <h5>
+                    <span>&#8594;</span>
+                    <!-- span c'est une balise de selection interne, aucune valeur sémantique, en général elle permet d'agir sur le mot qu'elle entoure avec le CSS -->
+                    Les liens
+                </h5>
+                <!-- _blank permet de créer un nouvel ongler -->
+                <a href="https://htmlcheatsheet.com" target="_blank">HTML Cheat Sheet</a>
+            </div>
+            <div>
+                <h6><i>&#128190;</i> Vidéos</h6>
+                <video src="./img/video.mp4" height="200" autoplay muted loop></video>
+            </div>
+        </section>
+        <section id="form">
+            <h2>Les formulaires</h2>
+            <form action="">
+                <!-- "for" et "id" permettent de lier le label à l'input -->
+                <label for="name">Nom</label>
+                <input type="text" id="name" placeholder="Entrez votre nom" />
+
+                <br />
+
+                <label for="age">Entrez votre age</label>
+                <input type="number" id="age" value="18" />
+
+                <br />
+
+                <!-- Input de type select -->
+                <label for="gender">Genre</label>
+                <select id="gender">
+                    <option value="Homme">Homme</option>
+                    <option selected="selected" value="Femme">Femme</option>
+                    <option value="Autre">Autre</option>
+                </select>
+
+                <!-- Input de type radio -->
+                <div>
+                    <input type="radio" name="type" id="human" checked />
+                    <label for="human">Humain</label>
+
+                    <input type="radio" name="type" id="dog" />
+                    <label for="dog">Chien</label>
+
+                    <input type="radio" name="type" id="cat" />
+                    <label for="cat">Chat</label>
+                </div>
+                <textarea placeholder="Votre message..." cols="20" rows="5"></textarea>
+
+                <br />
+
+                <!-- Input de type checkbox -->
+                <input type="checkbox" name="" id="cgv" />
+                <label for="cgv">Accepter les conditions générales</label>
+
+                <br />
+
+                <!-- Input de type submit permet de valider -->
+                <input type="submit" value="Ceci est le bouton pour valider le formulaire" />
+            </form>
+            <button>ceci est un bouton</button>
+        </section>
+    </main>
+
+    <!-- Mail et envoi de fichiers -->
+    <footer>
+        <a href="mailto:fs@gmail.com">Contactez moi !</a>
+        <a href="./notice.txt" download="Notice">Télécharger la notice</a>
+    </footer>
+</body>
+
+</html>

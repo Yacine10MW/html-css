@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les tableaux en HTML</title>
+    <link rel="stylesheet" href="./css/tableaux.css">
+</head>
+<body>
+    <h1>Un tableau, pour les données "tabulaires"</h1>
+
+    <table>
+        <!-- Titre du tableau (la légende) -->
+        <caption>Ventes de la semaine</caption>
+        <!-- thead est l'en-tête de tableau -->
+        <thead>
+            <tr><!-- tr = tabel row : rangée de tableau -->
+                
+                <th>Jour</th><!-- Cellules d'en-tête -->
+                <th>Smartphones</th>
+                <th>Tablettes</th>
+                <th>Ordinateur</th>
+            </tr>
+        </thead>
+        <!-- tbody, le corps du tableau -->
+        <tbody>
+            <tr>
+                <td>Lundi</td>
+                <td>10</td>
+                <td>5</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>Mardi</td>
+                <td>11</td>
+                <td>9</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Mercredi</td>
+                <td>14</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Jeudi</td>
+                <td>13</td>
+                <td>9</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Vendredi</td>
+                <td>15</td>
+                <td>10</td>
+                <td>3</td>
+            </tr>
+
+        </tbody>
+        <!-- tfoot, le pied du tableau -->
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>63</td>
+                <td>39</td>
+                <td>30</td>
+            </tr>
+        </tfoot>
+    </table>
+    <h2>Rowspan / Colspan</h2>
+    <table>
+        <caption>Exemple de tableau avec <em>rowspan</em></caption>
+        <tr>
+            <td>Nom</td>
+            <td>Mozart</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Email</td>
+            <td>mozart@gamil.com</td>
+        </tr>
+        <tr>
+            <!-- <td>Email</td> -->
+            <td>bestcomposer@free.fr</td>
+        </tr>
+
+    </table>
+
+    <table id="demoColspan">
+        <caption>Exemple de tableau avec <em>colspan</em></caption>
+        <!-- tr*7>td*7 -->
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3"></td>
+            <td class="noir"></td>
+            <td colspan="3"></td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td colspan="3"></td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td class="noir"></td>
+            <td colspan="5"></td>
+            <td class="noir"></td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td colspan="3"></td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td colspan="3"></td>
+            <td class="noir"></td>
+            <td colspan="3"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    
+</body>
+</html>

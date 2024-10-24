@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/images.css">
+    <title>Les images en HTML</title>
+</head>
+
+<body>
+    <h1>Les images</h1>
+    <!-- 
+        La balise qui va nous permettre d'insérer une image c'est la balise <img src="" alt="">, c'est une balise orpheline.
+        L'attribut "src" : il permet d'indiquer où se trouve l'image que l'on veut insérer
+        L'attribut "alt" : (texte altenatif) on doit toujours indiquer un texte alternatif à l'image, description de l'image. Ce texte sera affiché à la place de l'image si celle-ci ne peut pas être télécharger sur la page, ou dans les navigateurs de personne handicapée (non-voyants)
+    
+    -->
+    <section>
+        <h2>1 / Image insérée en HTML</h2>
+        <div>
+            <img src="./img/bg.webp" alt="mes vacances" height="200">
+        </div>
+        <!-- Ici dans src, j'ai mis le chemin relatif de l'image -->
+
+        <img src="https://i.notretemps.com/1400x787/smart/2021/05/03/trois-facons-de-distraire-votre-chat-a-la-maison.jpeg"
+            alt="un chaton mignion">
+        <!-- Ici dans src, j'ai mis le chemin absolu de l'image -->
+
+        <img src="./img/chat_gris.jpg" alt="Un chaton gris" title="Un chaton gris">
+        <!--  je rajoute une infobulle sur l'image -->
+
+    </section>
+    <section>
+        <h2>2 / Les figures</h2>
+        <!-- 
+            les figures sont des éléments qui viennen t enrichir le texte pour compléter les informations sur l'image.
+            Une figure est plus souvent accompagné d'une légende. Pour ajouter une légende, on utilise la balise <figcaption> qui est à l'interieur de la balise <figure> comme ceci :
+        -->
+        <figure>
+            <img src="./img/bg.webp" alt="mes vacances" height="200">
+            <figcaption>
+                une photo des mes vacances
+            </figcaption>
+        </figure>
+
+    </section>
+    <section class="imageFond">
+        <h2>3 / les images de fond, insérées en CSS</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laborum labore animi officia vel,
+            tempore nobis quaerat commodi exercitationem autem modi aperiam id, pariatur distinctio vero eveniet
+            recusandae laboriosam. Aliquid?
+        </p>
+    </section>
+    <section>
+        <h2>4/ Imagess avec animation en CSS</h2>
+        <img src="./img/cheval.jpg" alt="cheval" class="image">
+        <br>
+        <img src="./img/cheval.jpg" alt="cheval" class="image rotation360">
+    </section>
+
+    <section>
+        <h2>5/ Image de type block</h2>
+
+        <img src="./img/cheval.jpg" alt="imgage cheval" class="imgCheval">
+        <img src="./img/cheval.jpg" alt="imgage cheval" class="imgCheval">
+        <img src="./img/cheval.jpg" alt="imgage cheval" class="imgCheval">
+    </section>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/listes.css">
+    <title>Les liste en HTML</title>
+    
+</head>
+
+<body>
+
+    <h1>Les listes</h1>
+    <h3>La recette des crêpes</h3>
+
+    <h4>Les ingrédients de la pate à crêpe</h4>
+    <ul><!-- ul = unorderd list : liste non ordonnée -->
+        <!-- li*5 -->
+        <li>Farine</li><!-- li = list item : élément de liste -->
+        <li>Oeufs</li>
+        <li>Lait</li>
+        <li>Sucre</li>
+        <li>Une pincé de sel</li>
+    </ul>
+    <!-- 
+    la balise "ul" permet de créer une liste non ordonée. Il faut l'ouvrir en début de la liste et la fermer après le dernier élément de la liste
+        La balise "li" permet de créer un élément de la liste
+        visuellement, des puces (les points noirs) apparaissent automatiquement (modifiable en css.)
+    -->
+    <h4>Préparation</h4>
+    <ol><!-- ol = orderd list : liste ordonnée -->
+        <li>Verser la farine dans le bol, avec le sucre et la pincé de sel</li>
+        <li>Incorporer les ouefs les uns après les autres</li>
+        <li>Ajouter du lait</li>
+        <li>Mélanger bien et laisser reposer la pâte pendant une heure</li>
+        <li>Chauffer le crêpière avec une noisette de beure</li>
+        <li>Faites sauter les crêpes: hop!</li>
+    </ol>
+    <hr>
+
+    <h3>Liste avec attribut type A</h3>
+    <!-- ol>li*3 -->
+    <ol type="A">
+        <li>Elément numéroté de la liste 1</li>
+        <li>Elément numéroté de la liste 2</li>
+        <li>Elément numéroté de la liste 3</li>
+    </ol>
+    <h3>Liste avec attribut type a</h3>
+
+    <ol type="a">
+        <li>Elément numéroté de la liste 1</li>
+        <li>Elément numéroté de la liste 2</li>
+        <li>Elément numéroté de la liste 3</li>
+    </ol>
+
+    <h3>Liste avec attribut type i</h3>
+
+    <ol type="i">
+        <li>Elément numéroté de la liste 1</li>
+        <li>Elément numéroté de la liste 2</li>
+        <li>Elément numéroté de la liste 3</li>
+    </ol>
+
+    <h3>Liste avec attribut type I</h3>
+
+    <ol type="I">
+        <li>Elément numéroté de la liste 1</li>
+        <li>Elément numéroté de la liste 2</li>
+        <li>Elément numéroté de la liste 3</li>
+    </ol>
+    <hr>
+    <h3>Imbrication de liste</h3>
+    <!-- On peut mélanger "ul" et "ol" à condition de les fermer correctement -->
+    <ul>
+        <li>Elément 1 de la liste</li>
+        <li>Elément 2 de la liste
+            <ol>
+                <li>Elément 1 de sous liste</li>
+                <li>Elément 2 de sous liste</li>
+            </ol>
+        </li>
+        <li>Elément 3 de la liste</li>
+
+
+    </ul>
+
+    <ol>
+        <li>Animaux domestique
+            <ul>
+                <li>chat</li>
+                <li>Chien</li>
+                <li>Tortue</li>
+            </ul>
+        </li>
+        <li>Animaux sauvage
+            <ul>
+                <li>Lion</li>
+                <li>Tigre</li>
+                <li>Girafe</li>
+            </ul>
+        </li>
+    </ol>
+
+</body>
+
+</html>
